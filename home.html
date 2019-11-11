@@ -1,0 +1,51 @@
+{%extends "layout.html"%}
+{%block content%}
+    <div class="home">
+        <h1>My Homepage</h1>
+        <p>This is a test website</p>
+
+        <div>
+            <label for "FLName" size="35">Name</label> &nbsp;
+            <br />
+            <input type="text" size="35" name="FLNAme" placeholder="First Name" required />
+            <input type="text" size="35" name="FLName" placeholder="Last Name" required />
+        </div>
+        <br />
+        <div>
+            <label for "email" size="50">Email Address:</label> &nbsp;
+            <br />
+            <input type="email" size="50" name="email" placeholder="user@email.com"
+                   autocomplete="off" required />
+        </div>
+        <br />
+        <div class="interests">
+            <label for "interests">Select all items that may interest you:</label>
+            <br />
+            <input type="checkbox" /> <label>Option 1</label>
+            <input type="checkbox" /> <label>Option 2</label>
+            <input type="checkbox" /> <label>Option 3</label>
+            <input type="checkbox" /> <label>Option 4</label>
+        </div>
+        <br />
+        <div class="gender">
+            <label for "gender">Gender</label> <br />
+            <input type="radio" name="gender" />
+            <label>Male</label>
+            <input type="radio" name="gender" />
+            <label>Female</label>
+        </div>
+        <br />
+        <div class="ageCatagory">
+            <label for "ageCatagory">Select your age range from the list: </label>
+            <br />
+            <select name="ageCatagory">
+                <option value="teens">Teens</option>
+                <option value="twenties">Twenties</option>
+                <option value="thirties">Thirties</option>
+                <option value="fourties">Fourties</option>
+                <option value="fifties">Fifties</option>
+                <option value="seniors">Seniors</option>
+            </select>
+        </div>
+    </div>
+{%endblock%}
